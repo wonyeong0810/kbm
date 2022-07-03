@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block con %}
+<h1><b>INFO</b></h1>
+<div class="row mt-3">
+    <div class="card" style="width: 18rem;">
+        <img src="/media/한국어문형러.png" class="card-img-top" style=" height: 70%;">
+        <div class="card-body">
+            <h5 class="card-title">비즈니스 한국어 문형: 러시아어권 학습자를 위하여</h5>
+            <a href="{% url 'kbm:book1' %}" class="btn btn-primary">자세한 설명</a>
+        </div>
+    </div>
+    <div style="width: 50px;" class="공백"></div>
+    <div class="card" style="width: 18rem;">
+        <img src="/media/한국어문형영.png" class="card-img-top" style=" height: 70%;">
+        <div class="card-body">
+            <h5 class="card-title">비즈니스 한국어 문형: 영어권 학습자를 위하여</h5>
+            <a href="{% url 'kbm:book2' %}" class="btn btn-primary">자세한 설명</a>
+        </div>
+    </div>
+    <div style="width: 50px;" class="공백"></div>
+    <div class="card" style="width: 18rem;">
+        <img src="/media/한국어말하기.png" class="card-img-top" style=" height: 70%;">
+        <div class="card-body">
+            <h5 class="card-title">초급 한국어 말하기 평가</h5>
+            <a href="{% url 'kbm:book3' %}" class="btn btn-primary">자세한 설명</a>
+        </div>
+    </div>
+    <div style="width: 50px;" class="공백"></div>
+</div>
+{% endblock %}
